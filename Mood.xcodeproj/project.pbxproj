@@ -15,6 +15,7 @@
 		A62F655E1BB147F10017FDF7 /* MyPressure.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F655D1BB147F10017FDF7 /* MyPressure.swift */; settings = {ASSET_TAGS = (); }; };
 		A62F65621BB14AAC0017FDF7 /* PressureKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62F65611BB14AAC0017FDF7 /* PressureKitView.swift */; settings = {ASSET_TAGS = (); }; };
 		A62F65651BB157F10017FDF7 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A62F65631BB156600017FDF7 /* alert.mp3 */; };
+		A6FA4EC71BB29E9D002A105E /* SwiftButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FA4EC61BB29E9D002A105E /* SwiftButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A62F655D1BB147F10017FDF7 /* MyPressure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPressure.swift; sourceTree = "<group>"; };
 		A62F65611BB14AAC0017FDF7 /* PressureKitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PressureKitView.swift; sourceTree = "<group>"; };
 		A62F65631BB156600017FDF7 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
+		A6FA4EC61BB29E9D002A105E /* SwiftButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +62,26 @@
 		A62F65461BB13FBE0017FDF7 /* Mood */ = {
 			isa = PBXGroup;
 			children = (
-				A62F65631BB156600017FDF7 /* alert.mp3 */,
+				A6FA4EC61BB29E9D002A105E /* SwiftButton.swift */,
 				A62F65471BB13FBE0017FDF7 /* AppDelegate.swift */,
 				A62F655D1BB147F10017FDF7 /* MyPressure.swift */,
 				A62F65491BB13FBE0017FDF7 /* ViewController.swift */,
 				A62F65611BB14AAC0017FDF7 /* PressureKitView.swift */,
 				A62F654B1BB13FBE0017FDF7 /* Main.storyboard */,
-				A62F65531BB13FBE0017FDF7 /* Info.plist */,
-				A62F654E1BB13FBE0017FDF7 /* Assets.xcassets */,
 				A62F65501BB13FBE0017FDF7 /* LaunchScreen.storyboard */,
+				A6FA4EC81BB2A16C002A105E /* Resources */,
 			);
 			path = Mood;
+			sourceTree = "<group>";
+		};
+		A6FA4EC81BB2A16C002A105E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A62F65531BB13FBE0017FDF7 /* Info.plist */,
+				A62F65631BB156600017FDF7 /* alert.mp3 */,
+				A62F654E1BB13FBE0017FDF7 /* Assets.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 				A62F65621BB14AAC0017FDF7 /* PressureKitView.swift in Sources */,
 				A62F654A1BB13FBE0017FDF7 /* ViewController.swift in Sources */,
 				A62F65481BB13FBE0017FDF7 /* AppDelegate.swift in Sources */,
+				A6FA4EC71BB29E9D002A105E /* SwiftButton.swift in Sources */,
 				A62F655E1BB147F10017FDF7 /* MyPressure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,6 +308,7 @@
 				A62F65581BB13FBE0017FDF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

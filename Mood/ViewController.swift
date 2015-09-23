@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     let pressureKit = PressureKitView()
     
+    let button = SwiftButton()
+    
     var audioPlayer = AVAudioPlayer()
     
     var endMoving: Bool = false {
@@ -61,8 +63,6 @@ class ViewController: UIViewController {
         self.view.addGestureRecognizer(pan)
         
         //Add start agian button
-        let button = UIButton(type:.System) as UIButton
-        button.setTitle("再来一次", forState: .Normal)
         button.frame = CGRectMake(150, 550, 80, 40)
         button.tintColor = UIColor.whiteColor()
         button.addTarget(self, action: "buttonTapped:", forControlEvents: .TouchUpInside)
@@ -96,6 +96,7 @@ class ViewController: UIViewController {
     }
     
     func buttonTapped(sender: UIButton) {
+        self.button.enabled = false
         UIView.animateWithDuration(fadeDuration, animations: {
             self.pressureKit.alpha = 0.0
         }){ finished in
@@ -103,7 +104,9 @@ class ViewController: UIViewController {
             
             UIView.animateWithDuration(self.appearDuration, animations: {
                 self.pressureKit.alpha = 1.0
-            }, completion: nil)
+            }){ finished in
+                self.button.enabled = true
+            }
             
         }
     }
